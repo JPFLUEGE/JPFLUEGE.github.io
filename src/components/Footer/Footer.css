@@ -1,0 +1,11 @@
+
+.container-footer {
+    padding-right: 30px;
+    text-align: right;
+    font-size: 0.8rem;
+}
+
+.container-footer a {
+    text-decoration: none;
+    color: grey;
+}

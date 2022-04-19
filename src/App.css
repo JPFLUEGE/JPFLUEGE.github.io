@@ -1,0 +1,11 @@
+:root {
+    --custom-white: white;
+    --custom-grey: grey;
+    --cormorant: 'Cormorant Garamond', serif;
+    --poppins: 'Poppins', sans-serif;
+    --quicksand: 'Quicksand', sans-serif;
+}
+
+.container-background {
+    height: 100vh;
+}
