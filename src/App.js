@@ -1,12 +1,21 @@
 import React from 'react';
-import logo from './logo.svg';
+import {
+  BrowserRouter,
+  Routes,
+  Route,
+} from "react-router-dom";
+
+import Main from "./util/Main.js"
 import './App.css';
 
 import Landing from "./components/landing/Landing"
 import ProjectList from "./components/ProjectList/ProjectList"
 import Footer from "./components/Footer/Footer"
 import Menu from "./components/Menu/Menu"
-import Main from "./util/Main"
+import CV from "./components/CV/CV"
+import About from "./components/About/About"
+import Contact from "./components/Contact/Contact"
+
 
 
 class App extends React.Component {
@@ -52,16 +61,23 @@ class App extends React.Component {
   getProjects() {
     this.setState({Projects: this.projects})
   } 
-  
+
   render() {
     return (
-      <div className="container-background">
-        <Landing />
-        <ProjectList projects={this.state.Projects} />
-
-        <Menu />
-        <Footer />
-      </div>);
+      <BrowserRouter>
+        <div className="container-background">
+          <Landing />
+          <Routes>
+            <Route path="/" element={<ProjectList projects={this.state.Projects} />} />
+            <Route path="/about" element={<About />} />
+            <Route path="/cv" element={<CV />} />
+            <Route path="/contact" element={<Contact />} />
+          </Routes>
+          <Menu />
+          <Footer />
+        </div>
+      </BrowserRouter>
+    )
   }
 
   componentDidMount() {

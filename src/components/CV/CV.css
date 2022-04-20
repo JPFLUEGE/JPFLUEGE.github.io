@@ -1,0 +1,88 @@
+.container-cv {
+    min-height: 250px;
+    display: grid;
+    grid-template-columns: 1fr;
+    justify-content: center;
+    justify-items: center;
+    width: 100%;
+    padding: 0 20% 0 20%;
+    position: relative;
+}
+
+.container-cv .download {
+    display: flex; 
+    flex-direction: column;
+    position: absolute;
+    top: 1%;
+    right: 21%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.container-cv .download button {
+    font-size: .8rem;
+    padding: 10px 20px 10px 20px;
+    box-shadow: 0 0 6px 0 rgba(157, 96, 212, 0.5);
+    border-radius: 30px;
+    border: solid 3px transparent;
+    background-image: linear-gradient(rgba(255, 255, 255, 0), rgba(255, 255, 255, 0)), linear-gradient(101deg, #78e4ff, #ff48fa);
+    background-origin: border-box;
+    background-clip: content-box, border-box;
+    box-shadow: 2px 1000px 1px #fff inset;
+}
+
+.container-cv .download button:hover {
+    box-shadow: none;
+    color: white;
+  }
+
+  .container-cv .download p {
+      font-size: .6rem;
+  }
+
+
+.container-cv .buttons {
+    padding-top: 10px;
+}
+
+
+.container-cv .buttons > * {
+   padding: 8px 16px;
+   margin: 5px 5px 0 0;
+} 
+
+.container-cv .cv {
+    background-color: white;
+    padding: 30px;
+    border-radius: 20px;
+}
+
+.container-cv h4 {
+    font-size: 1.3rem;
+    padding-bottom: 10px;
+    padding-top: 10px;
+}
+
+.container-cv h5 {
+    font-size: 1.1rem;
+    padding-top: 10px;
+}
+
+.container-cv .head {
+    display: flex;
+    justify-content: space-between;
+}
+
+.container-cv .cv li li {
+    list-style: outside;
+    list-style-type: circle;
+    margin-left: 15px;
+}
+
+.container-cv .leadership li, .container-cv .skills li {
+    list-style: outside;
+    list-style-type: circle;
+    margin-left: 15px;
+}

@@ -1,0 +1,16 @@
+.container-about {
+    min-height: 250px;
+    color:white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.container-about > * {
+    padding:30px;
+}
+
+.container-about h3 {
+    align-self: flex-start
+}
+

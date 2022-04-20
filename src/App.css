@@ -1,11 +1,13 @@
 :root {
-    --custom-white: white;
+    --custom-white-focus: rgba(255, 255, 255, 0.964);
+    --custom-white-unfocus: rgba(255, 255, 255, 0.823);
     --custom-grey: grey;
     --cormorant: 'Cormorant Garamond', serif;
     --poppins: 'Poppins', sans-serif;
     --quicksand: 'Quicksand', sans-serif;
 }
 
-.container-background {
-    height: 100vh;
+
+li {
+    list-style: none;
 }

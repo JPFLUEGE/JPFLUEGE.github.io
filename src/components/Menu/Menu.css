@@ -10,14 +10,15 @@
     justify-content: space-around;
     align-items: center;
     margin-top: 20px;
-    background-color: rgba(255, 255, 255, 0.74);
+    background-color: var(--custom-white-unfocus);
     border-radius: 100px;
     padding: 10px 0px 5px 0px;
     width: 300px;
+    transition: .5s ease-in-out;
 }
 
 .container-menu ul:hover {
-    background-color: rgba(255, 255, 255, 0.867);
+    background-color: var(--custom-white-focus);
 }
 
 .container-menu img {
@@ -25,12 +26,12 @@
     z-index: 99;
 }
 
-.container-menu a  {
+.container-menu li  {
    position: relative;
-
+   list-style: none;
 }
 
-.container-menu a::after {
+.container-menu li::after {
     position: absolute;
     content: "";
     left: -3px;
@@ -44,15 +45,13 @@
     filter: blur(3px)
 }
 
-.container-menu a:hover::after {
+.container-menu li:hover::after {
     opacity: 1;
 }
 
-
-li {
-    list-style: none;
+.container-menu .dev {
+    border-radius: 100px;
 }
-
 
 @media only screen and (max-width: 850px) {
     .container-menu {

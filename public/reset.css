@@ -5,6 +5,13 @@
     scroll-behavior: smooth;
 }
 
+
+html {
+    background-color: rgb(38, 38, 38);
+}
+
+/*
 html {
     background-color: rgb(25, 25, 25);
 }
+*/
