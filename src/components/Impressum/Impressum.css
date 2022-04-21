@@ -1,0 +1,18 @@
+.container-impressum {
+    color: var(--custom-white-focus);
+    text-align: center;
+}
+
+.container-impressum > * {
+    padding: 5px;
+}
+
+.container-impressum .legal {
+    padding-top: 100px;
+}
+
+.container-impressum a {
+    color: rgb(76, 76, 245);
+    cursor:pointer;
+}
+

@@ -9,7 +9,7 @@ class CV extends React.Component {
             <div className="container-cv">
                 <div className="download">
                 <a target="_blank" rel="noreferrer" href={Julian}>
-                    <button>Download unshortened CV
+                    <button>Download unmodified CV
                         <p><Link to="/contact">Contact me</Link> for file password</p>
                     </button></a>
 

@@ -1,0 +1,15 @@
+.container-sent {
+    text-align: center;
+    font-size: 1.3rem;
+    color: var(--custom-white-unfocus);
+    padding: 20px 0 60px 0;
+}
+
+.container-sent h5 {
+    padding-top: 10px;
+}
+
+.container-sent p {
+    padding-top: 15px;
+    font-size: .7rem;
+}

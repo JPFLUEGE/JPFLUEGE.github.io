@@ -4,6 +4,35 @@ import Demo from "../assets/demo.webp"
 import Youtube from "../assets/youtube.png"
 
 class Projects extends React.Component {
+    constructor(props) {
+        super(props);
+        this.renderButtons = this.renderButtons.bind(this);
+    }
+
+    renderButtons() {
+        if (this.props.project.vidSrc && this.props.project.href) {
+            return (
+                <div className="links transition">
+                    <a target="_blank" rel="noreferrer" href={this.props.project.href}><img src={Demo} alt="project link" /></a>
+                    <a target="_blank" rel="noreferrer" href={this.props.project.vidSrc}><img src={Youtube} alt="youtube demo video link" /></a>
+                </div>
+            )
+        } else if (this.props.project.vidSrc) {
+            return (
+                <div className="links transition">
+                    <a target="_blank" rel="noreferrer" href={this.props.project.vidSrc}><img src={Youtube} alt="youtube demo video link" /></a>
+                </div>
+            )
+        } else if (this.props.project.href) {
+            (
+                <div className="links transition">
+                    <a target="_blank" rel="noreferrer" href={this.props.project.href}><img src={Demo} alt="project link" /></a>
+                </div>
+            )
+        } else {
+            return
+        }
+    }
 
     render() {
         return (
@@ -14,10 +43,7 @@ class Projects extends React.Component {
                             <h3>{this.props.project.name}</h3>
                             <h4>{this.props.project.scope}</h4>
                         </div>
-                        <div className="links transition">
-                            <a target="_blank" rel="noreferrer" href={this.props.project.href}><img src={Demo} alt="project link" /></a>
-                            <a target="_blank" rel="noreferrer" href={this.props.project.vidSrc}><img src={Youtube} alt="youtube demo video link" /></a>
-                        </div>
+                        {this.renderButtons()}
                     </div>
                     <div className="info cta-container transition">
                         <p><b>Lang: </b>{this.props.project.lang}</p>

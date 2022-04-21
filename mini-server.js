@@ -12,10 +12,6 @@ app.get("/", (req, res) => {
     res.sendStatus(200)
 })
 
-app.get("/contact", (req, res) => {
-    res.send("hello")
-})
-
 app.listen(PORT, () => {
     console.log(`Server listening on Port ${PORT}`)
 })

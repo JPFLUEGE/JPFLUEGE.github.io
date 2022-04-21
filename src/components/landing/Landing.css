@@ -26,8 +26,9 @@
     text-transform: uppercase;
 }
 
-span {
-    opacity: 0;
+.container-landing h1 a {
+    text-decoration: none;
+    color: var(--custom-white-unfocus);
 }
 
 .container-landing ul {
