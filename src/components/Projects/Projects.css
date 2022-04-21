@@ -28,8 +28,6 @@
     height: 5px;
     background-color: #FF3CAC;
     background-image: linear-gradient(225deg, #FF3CAC 0%, #784BA0 50%, #2B86C5 100%);
-    
-
 }
 
 .container-project:hover {
@@ -52,7 +50,6 @@
     display: grid;
     grid-template-columns: 90% 10%;
     gap: 5px;
-  
 }
 
 .links {
@@ -91,8 +88,6 @@
     .container-projectlist ul {
         grid-template-columns: repeat(1, 1fr);
     }
-
-    
 
     .container-project {
         height: 300px;      

@@ -30,7 +30,7 @@ span {
     opacity: 0;
 }
 
-.container-landing h2 {
+.container-landing ul {
     font-family: sans-serif;
     position: relative;
     width: 40%;
@@ -42,19 +42,23 @@ span {
     justify-content: center;
 }
 
-.container-landing h2 a {
+.container-landing ul li {
     text-decoration: none;
     color: rgb(170, 170, 170);
     padding: 0 10px 0 10px;
     text-align: center;
 }
 
-.container-landing h2 a:hover {
+.container-landing a {
+    text-decoration: none;
+}
+
+.container-landing ul li:hover {
     color: var(--custom-white-unfocus);
     transition: .3s ease-in-out;
 }
 
-.container-landing h2::after {
+.container-landing ul::after {
     position: absolute;
     content: "";
     left: 0;
@@ -67,13 +71,13 @@ span {
 
 
 @media only screen and (max-width: 1100px) {
-    .container-landing h2 {
+    .container-landing ul {
         width: 60%;
     }
 }
 
 @media only screen and (max-width: 850px) {
-    .container-landing h2 {
+    .container-landing ul {
         width: 80%;
     }
     .container-landing {
