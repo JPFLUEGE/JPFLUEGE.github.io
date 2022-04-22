@@ -8,8 +8,8 @@
     padding-bottom: 40px;
 }
 
-.container-datenschutz > * {
-    padding: 5px;
+.container-datenschutz * {
+    padding: 15px;
 }
 
 .container-datenschutz .legal {

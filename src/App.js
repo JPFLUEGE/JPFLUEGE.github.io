@@ -5,7 +5,6 @@ import {
   Route,
 } from "react-router-dom";
 
-import Main from "./util/Main.js"
 import './App.css';
 
 import Landing from "./components/Landing/Landing"
@@ -19,21 +18,15 @@ import Sent from "./components/Sent/Sent"
 import Impressum from "./components/Impressum/Impressum"
 import Datenschutz from "./components/Datenschutz/Datenschutz"
 
-
-
 class App extends React.Component {
   constructor(props) {
     super(props);
 
     this.state = {
       Projects: [],
-      Name: "",
-      Mail: "",
-      Textarea: ""
     }
 
     this.getProjects = this.getProjects.bind(this);
-    this.formSubmit = this.formSubmit.bind(this);
     this.handleChangeName = this.handleChangeName.bind(this); 
     this.handleChangeMail = this.handleChangeMail.bind(this);
     this.handleChangeTextarea = this.handleChangeTextarea.bind(this);
@@ -86,19 +79,6 @@ class App extends React.Component {
     this.setState({ Textarea: e.target.value })
   }
 
-  formSubmit() {
-    Main.formSubmit(this.state.Name, this.state.Mail, this.state.Textarea).then(() => this.setState({
-      Name: "",
-      Mail: "",
-      Textarea: ""
-    }))
-      .then(() => {
-        window.location = "/sent";
-      });
-  }
-
-
-
   render() {
     return (
       <BrowserRouter>
@@ -111,7 +91,7 @@ class App extends React.Component {
             <Route path="/cv" element={<CV />} />
             <Route path="/legal" element={<Impressum />} />
             <Route path="privacy" element={<Datenschutz />} />
-            <Route path="/contact" element={<Contact name={this.handleChangeName} mail={this.handleChangeMail} textarea={this.handleChangeTextarea} onSubmit={this.formSubmit} />} />
+            <Route path="/contact" element={<Contact />} />
           </Routes>
           <Menu />
           <Footer />
@@ -121,10 +101,9 @@ class App extends React.Component {
   }
 
   componentDidMount() {
-    this.getProjects()
+    // might implement backend instead of hardcode
+    this.getProjects();
   }
-
 }
 
- 
 export default App;

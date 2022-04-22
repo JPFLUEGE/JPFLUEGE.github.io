@@ -1,48 +1,50 @@
-import React from 'react';
+import React, { useState } from 'react';
+import { useNavigate } from "react-router-dom";
 import "./Contact.css"
+import Main from "../../util/Main"
 
-class Contact extends React.Component {
-    constructor(props) {
-        super(props);
-        this.handleSubmit = this.handleSubmit.bind(this);
-        this.loading = this.loading.bind(this);
-        //to be fixed
-        this.state = {
-            loading: false
-        }
-    }
 
-    handleSubmit(event) {
-        event.preventDefault();
-        this.setState({ loading: true })
-        this.props.onSubmit().then(() => this.setState( { loading: false}))
-    }
+const Contact2 = (props) => {
 
-    //TO BE FIXED
-    loading() {
-        if (this.state.loading) {
+    const [loading, setLoading] = useState(false)
+    const [name, setName] = useState("")
+    const [mail, setMail] = useState("")
+    const [textarea, setTextarea] = useState("")
+
+
+    const navigate = useNavigate();
+
+    const load = () => {
+        if (loading) {
             return <div className="loading">Loading&#8230;</div>
         }
+    };
+
+    const handleSub = (e) => {
+        e.preventDefault();
+        setLoading(true);
+        //props.onSubmit()
+        Main.formSubmit(name, mail, textarea)
+        .then(() => setLoading(false))
+        .then(() => navigate("/sent"))
     }
-   
-    render() {
-        return (
-            <div className="container-form">
-                {this.loading()}
-                <form id="contact-form" onSubmit={this.handleSubmit}>
-                    <div>
-                        <input className="name" required placeholder="Name" onChange={this.props.name}></input>
-                        <input className="email" required type="email" placeholder="E-Mail" onChange={this.props.mail}></input>
-                    </div>
-                    <textarea className="text" type="text" required placeholder="Your message" onChange={this.props.textarea}></textarea>
-                    <div className="buttons">
-                        <button className="button" type="submit" value="Submit">Send</button>
-                        <a className="button" href="https://www.linkedin.com/in/julian-m-pflueger/" target="_blank" rel="noreferrer">via LinkedIn instead</a>
-                    </div>
-                </form>
-            </div>
-        );
-    }
-}
- 
-export default Contact;
+
+    return (
+        <div className="container-form">
+            {load()}
+            <form id="contact-form" onSubmit={handleSub}>
+                <div>
+                    <input className="name" required placeholder="Name" onChange={e => setName(e.target.value)}></input>
+                    <input className="email" required type="email" placeholder="E-Mail" onChange={e => setMail(e.target.value)}></input>
+                </div>
+                <textarea className="text" type="text" required placeholder="Your message" onChange={e => setTextarea(e.target.value)}></textarea>
+                <div className="buttons">
+                    <button className="button" type="submit" value="Submit">Send</button>
+                    <a className="button" href="https://www.linkedin.com/in/julian-m-pflueger/" target="_blank" rel="noreferrer">via LinkedIn instead</a>
+                </div>
+            </form>
+        </div>
+    )
+};
+
+export default Contact2;
