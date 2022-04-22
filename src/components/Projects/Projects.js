@@ -17,18 +17,21 @@ class Projects extends React.Component {
                     <a target="_blank" rel="noreferrer" href={this.props.project.vidSrc}><img src={Youtube} alt="youtube demo video link" /></a>
                 </div>
             )
+
+        } else if (this.props.project.href) {
+            return (
+                <div className="links transition">
+                    <a target="_blank" rel="noreferrer" href={this.props.project.href}><img src={Demo} alt="project link" /></a>
+                </div>
+            )
+
         } else if (this.props.project.vidSrc) {
             return (
                 <div className="links transition">
                     <a target="_blank" rel="noreferrer" href={this.props.project.vidSrc}><img src={Youtube} alt="youtube demo video link" /></a>
                 </div>
             )
-        } else if (this.props.project.href) {
-            (
-                <div className="links transition">
-                    <a target="_blank" rel="noreferrer" href={this.props.project.href}><img src={Demo} alt="project link" /></a>
-                </div>
-            )
+
         } else {
             return
         }

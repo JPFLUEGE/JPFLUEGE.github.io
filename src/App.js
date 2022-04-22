@@ -18,6 +18,8 @@ import Sent from "./components/Sent/Sent"
 import Impressum from "./components/Impressum/Impressum"
 import Datenschutz from "./components/Datenschutz/Datenschutz"
 
+import yelpo from "./components/assets/yelpo.PNG"
+
 class App extends React.Component {
   constructor(props) {
     super(props);
@@ -48,19 +50,19 @@ class App extends React.Component {
     scope: "Full Stack Web Development",
     lang: "HTML, CSS, Javascript",
     tech: "React (Frontend), Express (Backend), Cookies, Oauth2, APIs",
-    href: "www.google.de",
-    vidSrc: "https://www.youtube.com/",
-    explanation: "OAuth and all external requests handled via backend in Express.js. Returned user token saved in encrypted HTTPonly session cookie."
+    href: "",
+    vidSrc: "https://youtu.be/zxrxqRI8P5g/",
+    explanation: "OAuth and all external requests handled via backend in Express.js. Returned user token saved in encrypted HTTPonly session cookie. API used: Spotify"
   },
   {
     id: 3,
-    name: "Sudoku Solver",
+    name: "Restaurant Search",
     scope: "Frontend Web Development",
     lang: "HTML, CSS, Javascript",
-    tech: "APIs, Express",
-    href: "",
+    tech: "React, API",
+    href: "https://github.com/JPFLUEGE/Restaurant_Finder",
     vidSrc: "",
-    explanation: "Provided Sudoku puzzle from user is send to an API. Returned solution is autopopulated. Mini backend in Express.js for hiding API key."
+    explanation: "Search by name or location for a restaurant and sort it based on 'Best Match', 'Rating' or 'Most Reviewed'. API used: Yelp"
   }]
 
   getProjects() {
