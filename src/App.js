@@ -8,7 +8,7 @@ import {
 import Main from "./util/Main.js"
 import './App.css';
 
-import Landing from "./components/landing/Landing"
+import Landing from "./components/Landing/Landing"
 import ProjectList from "./components/ProjectList/ProjectList"
 import Footer from "./components/Footer/Footer"
 import Menu from "./components/Menu/Menu"
@@ -89,15 +89,15 @@ class App extends React.Component {
   formSubmit() {
     Main.formSubmit(this.state.Name, this.state.Mail, this.state.Textarea).then(() => this.setState({
       Name: "",
-      Mail:"",
-      Textarea:""
+      Mail: "",
+      Textarea: ""
     }))
-    .then(() => {
-      window.location = "/sent";
-    });
+      .then(() => {
+        window.location = "/sent";
+      });
   }
 
-  
+
 
   render() {
     return (
@@ -109,8 +109,8 @@ class App extends React.Component {
             <Route path="/sent" element={<Sent />} />
             <Route path="/about" element={<About />} />
             <Route path="/cv" element={<CV />} />
-            <Route path="/legal" element={<Impressum /> } />
-            <Route path="privacy" element={<Datenschutz /> } />
+            <Route path="/legal" element={<Impressum />} />
+            <Route path="privacy" element={<Datenschutz />} />
             <Route path="/contact" element={<Contact name={this.handleChangeName} mail={this.handleChangeMail} textarea={this.handleChangeTextarea} onSubmit={this.formSubmit} />} />
           </Routes>
           <Menu />
