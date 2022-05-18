@@ -103,7 +103,7 @@ class App extends React.Component {
   }
 
   componentDidMount() {
-    // might implement backend instead of hardcode
+    // might implement backenddd instead of hardcode
     this.getProjects();
   }
 }
