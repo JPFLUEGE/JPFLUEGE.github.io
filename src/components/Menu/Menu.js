@@ -1,5 +1,5 @@
 import React from 'react';
-import { Link } from "react-router-dom"
+import { NavLink } from "react-router-dom"
 import "./Menu.css"
 import Linkedin from "../assets/linkedin.webp";
 import About from "../assets/about.webp";
@@ -15,10 +15,10 @@ class Menu extends React.Component {
     render() {
         return (<nav className="container-menu">
             <ul>
-                <li><Link to="/"><img className="dev" src={Dev} alt="development" /></Link></li>
-                <li><Link to="/about"><img src={About} alt="about" /></Link></li>
-                <li><Link to="/cv"><img src={CV} alt="CV" /></Link></li>
-                <li><Link to="/contact"><img src={Contact} alt="contact" /></Link></li>
+                <li><NavLink to="/"><img className="dev" src={Dev} alt="development" /></NavLink></li>
+                <li><NavLink to="/about"><img src={About} alt="about" /></NavLink></li>
+                <li><NavLink to="/cv"><img src={CV} alt="CV" /></NavLink></li>
+                <li><NavLink to="/contact"><img src={Contact} alt="contact" /></NavLink></li>
                 <li><a target="_blank" rel="noreferrer" href="https://www.linkedin.com/in/julian-m-pflueger/"><img src={Linkedin} alt="linkedin profil" /></a></li>
                 <li><a target="_blank" rel="noreferrer" href="https://github.com/JPFLUEGE"><img src={Github} alt="github profil" /></a></li>
             </ul>
