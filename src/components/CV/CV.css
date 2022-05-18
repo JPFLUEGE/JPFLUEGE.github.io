@@ -50,7 +50,7 @@
 } 
 
 .container-cv .cv {
-    background-color: white;
+    background-color: var(--custom-white-focus);
     padding: 30px;
     border-radius: 20px;
 }
@@ -120,5 +120,22 @@
 
     .container-cv .download {
         right: 1.5%;
+    }
+}
+
+
+@media only screen  and (max-width: 700px) {
+    .container-cv .dates {
+        padding-bottom: 5px;
+        padding-top: 0px;
+    }
+
+    .container-cv .download button {
+        font-size: .7rem;
+        padding: 6px 12px 6px 12px;
+    }
+
+    .container-cv .download button p {
+        font-size: .5rem;
     }
 }

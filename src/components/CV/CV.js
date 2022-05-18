@@ -64,12 +64,12 @@ class CV extends React.Component {
                     </ul>
                     <h4 className="skills-head">Skills</h4>
                     <ul className="skills">
+                        <li>Languages: German (native), English (good knowledge)</li>
                         <li>HTML, CSS</li>
                         <li>JavaScript</li>
-                        <li>React as frontend framework</li>
-                        <li>Microsoft 365</li>
-                        <li>Languages: German (native), English (good knowledge)</li>
+                        <li>React</li>
                         <li>Python and SQL (used in past)</li>
+                        <li>Microsoft 365</li>
                     </ul>
                 </div>
             </div>
