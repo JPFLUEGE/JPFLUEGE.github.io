@@ -7,7 +7,7 @@ import {
 
 import './App.css';
 
-import Landing from "./components/Landing/Landing"
+import Landing from "./components/landing/Landing"
 import ProjectList from "./components/ProjectList/ProjectList"
 import Footer from "./components/Footer/Footer"
 import Menu from "./components/Menu/Menu"
@@ -18,7 +18,7 @@ import Sent from "./components/Sent/Sent"
 import Impressum from "./components/Impressum/Impressum"
 import Datenschutz from "./components/Datenschutz/Datenschutz"
 
-import yelpo from "./components/assets/yelpo.PNG"
+
 
 class App extends React.Component {
   constructor(props) {
