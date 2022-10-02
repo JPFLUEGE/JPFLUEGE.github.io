@@ -1,0 +1,23 @@
+{
+  "files": {
+    "main.css": "/static/css/main.3509a52f.css",
+    "main.js": "/static/js/main.b19c11b6.js",
+    "static/js/787.1ed0c42c.chunk.js": "/static/js/787.1ed0c42c.chunk.js",
+    "static/media/Julian_Pflueger.pdf": "/static/media/Julian_Pflueger.6d2b0c938b753c496dbb.pdf",
+    "static/media/youtube.png": "/static/media/youtube.deb64d1a1ed7c4ed8d21.png",
+    "static/media/contact.webp": "/static/media/contact.7187e51993a1c5abaa32.webp",
+    "static/media/about.webp": "/static/media/about.5da808d80c308097754d.webp",
+    "static/media/demo.webp": "/static/media/demo.31e5e18702ff8d5a94e8.webp",
+    "static/media/linkedin.webp": "/static/media/linkedin.db94ff72fcd04d0fe36f.webp",
+    "static/media/cv.webp": "/static/media/cv.6467afed8f5086cbc958.webp",
+    "static/media/dev.webp": "/static/media/dev.b77531491a0c519e662a.webp",
+    "index.html": "/index.html",
+    "main.3509a52f.css.map": "/static/css/main.3509a52f.css.map",
+    "main.b19c11b6.js.map": "/static/js/main.b19c11b6.js.map",
+    "787.1ed0c42c.chunk.js.map": "/static/js/787.1ed0c42c.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.3509a52f.css",
+    "static/js/main.b19c11b6.js"
+  ]
+}
