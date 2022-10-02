@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/static/css/main.3509a52f.css",
+    "main.css": "/static/css/main.66c0ea36.css",
     "main.js": "/static/js/main.b19c11b6.js",
     "static/js/787.1ed0c42c.chunk.js": "/static/js/787.1ed0c42c.chunk.js",
     "static/media/Julian_Pflueger.pdf": "/static/media/Julian_Pflueger.6d2b0c938b753c496dbb.pdf",
@@ -12,12 +12,12 @@
     "static/media/cv.webp": "/static/media/cv.6467afed8f5086cbc958.webp",
     "static/media/dev.webp": "/static/media/dev.b77531491a0c519e662a.webp",
     "index.html": "/index.html",
-    "main.3509a52f.css.map": "/static/css/main.3509a52f.css.map",
+    "main.66c0ea36.css.map": "/static/css/main.66c0ea36.css.map",
     "main.b19c11b6.js.map": "/static/js/main.b19c11b6.js.map",
     "787.1ed0c42c.chunk.js.map": "/static/js/787.1ed0c42c.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.3509a52f.css",
+    "static/css/main.66c0ea36.css",
     "static/js/main.b19c11b6.js"
   ]
 }
