@@ -24,6 +24,7 @@ class CV extends React.Component {
                                 <li>Collaborated with cross-functional teams to gather requirements and design new software functionalities. Goal was to enhance the existing software capabilities to ensure better data quality, user experience, and streamlined processes</li>
                                 <li>Assessed and analyzed demands from various stakeholders to determine their alignment with standard business processes</li>
                                 <li>Conducted monthly calls with 12 clusters existing of the European countries to review and discuss key performance indicators (KPIs) and findings which allowed for alignment on operational adjustments and the identification of areas requiring improvement or optimization</li>
+                                <li>Executed ad hoc analyses and provided new business insights by developing new reports and reporting logics</li>
                             </ul>
                         </li>
                         <li className="pp">
