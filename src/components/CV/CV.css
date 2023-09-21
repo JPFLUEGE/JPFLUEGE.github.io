@@ -64,6 +64,11 @@
     padding-bottom: 5px;
 }
 
+.container-cv .education-head {
+    padding-top: 20px;
+    padding-bottom: 5px;
+}
+
 .container-cv .skills-head {
     padding-top: 20px;
     padding-bottom: 5px;
@@ -93,7 +98,8 @@
     margin-left: 20px;
 }
 
-.container-cv .leadership li, .container-cv .skills li {
+
+.container-cv .leadership li, .container-cv .skills li, .education li {
     list-style: outside;
     list-style-type: circle;
     margin-left: 15px;

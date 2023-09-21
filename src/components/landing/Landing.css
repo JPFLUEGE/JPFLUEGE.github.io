@@ -52,14 +52,15 @@
 
 .container-landing a {
     text-decoration: none;
+    color: rgb(170, 170, 170);
 }
 
-.container-landing ul li:hover {
+.container-landing ul li:hover, .container-landing .trainer:hover {
     color: var(--custom-white-unfocus);
     transition: .3s ease-in-out;
 }
 
-.container-landing ul::after {
+.container-landing ul::after, .container-landing .trainer::after {
     position: absolute;
     content: "";
     left: 0;

@@ -42,17 +42,19 @@ class App extends React.Component {
     tech: "React (Frontend)",
     href: "",
     vidSrc: "",
-    explanation: "Current minimalistic portfolio website created with React.js"
+    explanation: "Current minimalistic portfolio website created with React.js",
+    learning: "Reusing learned frontend knowlegde"
   },
   {
     id: 2,
     name: "Song Recommendations",
     scope: "Full Stack Web Development",
     lang: "HTML, CSS, Javascript",
-    tech: "React (Frontend), Express (Backend), Cookies, Oauth2, APIs",
+    tech: "React (Frontend), Express (Backend), Cookies, OAuth2, APIs",
     href: "",
     vidSrc: "https://youtu.be/zxrxqRI8P5g/",
-    explanation: "OAuth and all external requests handled via backend in Express.js. Returned user token saved in encrypted HTTPonly session cookie. API used: Spotify"
+    explanation: "OAuth and all external requests handled via backend in Express.js. Returned user token saved in encrypted HTTPonly session cookie. API used: Spotify",
+    learning: "How the backend, APIs and queries work; how OAuth and cookies validate user logins"
   },
   {
     id: 3,
@@ -62,7 +64,8 @@ class App extends React.Component {
     tech: "React, API",
     href: "https://github.com/JPFLUEGE/Restaurant_Finder",
     vidSrc: "",
-    explanation: "Search by name or location for a restaurant and sort it based on 'Best Match', 'Rating' or 'Most Reviewed'. API used: Yelp"
+    explanation: "Search by name or location for a restaurant and sort it based on 'Best Match', 'Rating' or 'Most Reviewed'. API used: Yelp",
+    learning: "How API requests work"
   }]
 
   getProjects() {

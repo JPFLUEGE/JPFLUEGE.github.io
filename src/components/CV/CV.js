@@ -8,10 +8,7 @@ class CV extends React.Component {
         return (
             <div className="container-cv">
                 <div className="download">
-                <a target="_blank" rel="noreferrer" href={Julian}>
-                    <button>Download unmodified CV
-                        <p><Link to="/contact">Contact me</Link> for file password</p>
-                    </button></a>
+             
 
                 </div>
                 <div className="cv">
@@ -19,29 +16,27 @@ class CV extends React.Component {
                     <ul className="experience">
                         <li className="bd">
                             <div className="head">
-                            <h5>Business & Data Analyst</h5>
+                            <h5>Business Data Analyst, Terminal Handling</h5>
                             <p className="dates">December 2021 - present</p>
                             </div>
                             <ul>
-                                <li>Set up and responsible for a Power BI dashboard reporting solution with ten new operational and financial reports for Terminal Handling Europe</li>
-                                <li>Documented engineering requirements to improve current software abilities for better data quality, user experience and more efficient processes</li>
-                                <li>Provided with success one-time analysis for project evaluations</li>
+                                <li>Implemented Power BI dashboard reporting solutions to generate operational and financial reports for two departments</li>
+                                <li>Collaborated with cross-functional teams to gather requirements and design new software functionalities. Goal was to enhance the existing software capabilities to ensure better data quality, user experience, and streamlined processes</li>
+                                <li>Assessed and analyzed demands from various stakeholders to determine their alignment with standard business processes</li>
+                                <li>Conducted monthly calls with 12 clusters existing of the European countries to review and discuss key performance indicators (KPIs) and findings which allowed for alignment on operational adjustments and the identification of areas requiring improvement or optimization</li>
                             </ul>
                         </li>
                         <li className="pp">
                             <div className="head">
-                                <h5>Process & Project Manager</h5>
+                                <h5>Customer Process Manager, Business Services</h5>
                                 <p className="dates">September 2016 - December 2021</p>
                             </div>
                             <ul>
-                                <li>Developed processes and owned projects for biggest network customers and their Control Towers</li>
-                                <li>Used my process knowledge and prior gained skills as a software expert trainer to decrease process related costs by optimizing, automating, and establishing new processes</li>
-                                <li>Identified (revenue) possibilities, managed resulting projects as an expert </li>
-                                <li>Created cross functional reports and KPIs by applying business logic </li>
-                                <li>Analyzed operational data for gap identifications and shared or presented my insights management-appropriated</li>
-                                <li>Took up feedback of internal customers, evaluated improvements, issued IT demands by writing user stories and tested related software deployments on test environments across multiple applications</li>
-                                <li>Utilized self-learned skills to automate or to improve tasks</li>
-                                <li>Reviewed processes in different branches nationwide, logged and tracked the findings</li>
+                                <li>Developed processes and led the projects for the largest network customers including e. g. Amazon Inbound Preferred Carrier Program, internal cooperation with Schenker Ocean Freight as well as Bosch and Porsche</li>
+                                <li>Identified revenue increasing and cost decreasing opportunities and leveraged my experience as well as knowledge of internal systems to drive overall improvements resulting significant increase in revenue</li>
+                                <li>Functionally managed end-to-end customer control towers that operated specifically for large customers and their non-standard business needs</li>
+                                <li>Translated business needs into clear, concise and actionable requirements specifications as well as managing, prioritizing and testing multiple requirements across complex projects</li>
+                                <li>Took a personal interest in data analysis and programming allowing me to implement a Power BI dashboard solution as well as using Python to automate manual tasks</li>
                             </ul>
                         </li>
                         <li className="st">
@@ -50,26 +45,27 @@ class CV extends React.Component {
                                 <p className="dates">Februar 2015 - September 2016</p>
                             </div>
                             <ul>
-                                <li>Gained knowledge about new software programs and entire business process chain by using try & error as well as reading specifications </li>
-                                <li>Trained other trainers and during software roll-out new users </li>
-                                <li>Travelled nationwide for meeting and training purposess</li>
+                                <li>Led functionally the regional team of 8 members</li>
+                                <li>Developed expertise in the new transport management software and organization-wide business processes and workforce</li>
+                                <li>Identified software and process gaps by valuating processes and performance of various branches</li>
+                                <li>Delivered training programs for other trainers and end-users</li>
+                                <li>Created and maintained documentations, user stories as well as training resources</li>
                             </ul>
                         </li>
                     </ul>
-                    <h4 className="ls-head">Leadership Experience</h4>
-                    <ul className="leadership">
-                        <li>Led functionally the regional team of 8 members as a software expert trainer and functionally as a process manager two control towers with 15 colleagues</li>
-                        <li>Managed as a project manager various projects involving several cross-functional parties</li>
-                        <li>Shared my software and process knowledge and trained direct or cross-functional colleagues </li>
+                    <h4 className="education-head">Education</h4>
+                    <ul className="education">
+                        <li>Freight forwarding Apprenticeship diploma</li>
+                        <li>General Certificate of Secondary Education completed with distinction</li>
                     </ul>
-                    <h4 className="skills-head">Skills</h4>
+                    <h4 className="skills-head">Other skills and interests</h4>
                     <ul className="skills">
-                        <li>Languages: German (native), English (good knowledge)</li>
-                        <li>HTML, CSS</li>
-                        <li>JavaScript</li>
-                        <li>React</li>
-                        <li>Python and SQL (used in past)</li>
-                        <li>Microsoft 365</li>
+                        <li>Languages: German (native) & English (proficient)</li>
+                        <li>Power BI & Microsoft 365</li>
+                        <li>HTML, CSS, JavaScript, SQL</li>
+                        <li>Personal frontend web development projects and exploring new technologies</li>
+                        <li>Researching academic papers about nutrition and health</li>
+                        <li>Calisthenics</li>
                     </ul>
                 </div>
             </div>

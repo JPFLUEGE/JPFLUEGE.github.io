@@ -52,6 +52,7 @@ class Projects extends React.Component {
                         <p><b>Lang: </b>{this.props.project.lang}</p>
                         <p><b>Tech: </b>{this.props.project.tech}</p>
                         <p><b>Explanation: </b>{this.props.project.explanation}</p>
+                        <p><b>Learning: </b>{this.props.project.learning}</p>
                     </div>
                 </div>
             </div>
